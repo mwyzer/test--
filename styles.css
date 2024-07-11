@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+.filters-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px; /* Added margin bottom for gap */
+}
+
+.filters {
+    display: flex;
+    align-items: center;
+}
+
+.filter-container {
+    margin: 0 10px;
+}
+
+.filter-container label {
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+#monthFilter, #submittedByFilter, #searchBox {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#searchBox {
+    margin-left: 10px;
+    width: 200px;
+    margin-bottom: 20px; /* Adjust this value to create space */
+}
+
+#activityTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#activityTable thead {
+    color: blue;
+}
+
+#activityTable th {
+    padding: 10px;
+    text-align: left;
+}
+
+#activityTable tbody td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+#activityTable tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#activityTable tbody tr:hover {
+    background-color: #ddd;
+}
+
+#activityTable tbody td:first-child {
+    color: #007bff;
+    cursor: pointer;
+}
+
+#activityTable thead th:first-child {
+    padding-left: 20px; /* Adjust as needed */
+}

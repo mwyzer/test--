@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity Details</title>
+<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<h2>Activity Details</h2>
+
+<div class="filters-container">
+    <div class="filters">
+
+        <div class="filter-container">
+            <label for="mesinIdFilter">Mesin ID:</label>
+            <select id="mesinIdFilter">
+                <option value="">All</option>
+                <option value="LYK001">LYK001</option>
+                <option value="LYK002">LYK002</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <label for="monthFilter">Month</label>
+            <select id="monthFilter">
+                <option value="">All</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+            </select>
+        </div>
+
+        
+        <div class="filter-container">
+            <label for="siteCodeFilter">Site Code</label>
+            <select id="siteCodeFilter">
+                <option value="">All</option>
+                <option value="R001">R001</option>
+                <option value="R002">R002</option>
+                <option value="R003">R003</option>
+                <option value="R004">R004</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <label for="submittedByFilter">Operator</label>
+            <select id="submittedByFilter">
+                <option value="">All</option>
+                <option value="Robin">Robin</option>
+                <option value="Batman">Batman</option>
+                <option value="Nobita">Nobita</option>
+                <option value="Ultraman">Ultraman</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+        <div class="filter-container">
+            <label for="activityFilter">Activity</label>
+            <select id="activityFilter">
+                <option value="">All</option>
+                <option value="Cincang 4">Cincang 4&quot; Tebal</option>
+                <option value="Cincang 5">Cincang 5&quot; Tebal</option>
+                <!-- Add more options as needed -->
+            </select>
+        </div>
+
+    </div>
+</div>
+
+<table id="activityTable" class="display">
+    <thead>
+        <tr>
+            <th>Action</th>
+            <th>Submitted By</th>
+            <th>Submitted When</th>
+            <th>Site Code</th>
+            <th>Activity</th>
+            <th>UOM</th>
+            <th>Block Number</th>
+            <th>Task</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Mesin ID</th>
+            <th>Fuel</th>
+            <th>Check By</th>
+            <th>When Check</th>
+            <th>Verified By</th>
+            <th>When Verified</th>
+            <th>Duty</th>
+            <th>Reason</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><button class="edit-button">Edit</button></td>
+            <td>Robin</td>
+            <td>15-01-2024</td>
+            <td>R001</td>
+            <td>Cincang 4" Tebal</td>
+            <td>Pokok</td>
+            <td>116</td>
+            <td>A1</td>
+            <td>07:00</td>
+            <td>16:00</td>
+            <td>LYK001</td>
+            <td>200</td>
+            <td>Person</td>
+            <td></td>
+            <td>Person</td>
+            <td>Time</td>
+            <td>On Duty</td>
+            <td>Text</td>
+        </tr>
+        <tr>
+            <td><button class="edit-button">Edit</button></td>
+            <td>Batman</td>
+            <td>20-02-2024</td>
+            <td>R002</td>
+            <td>Cincang 5" Tebal</td>
+            <td>Meter</td>
+            <td>116</td>
+            <td>A1</td>
+            <td>07:00</td>
+            <td>16:00</td>
+            <td>LYK002</td>
+            <td>200</td>
+            <td>Person</td>
+            <td></td>
+            <td>Person</td>
+            <td>Time</td>
+            <td>On Duty</td>
+            <td>Text</td>
+        </tr>
+                <tr>
+            <td><button class="edit-button">Edit</button></td>
+            <td>Superman</td>
+            <td>24-08-2024</td>
+            <td>R003</td>
+            <td>Cincang 5" Tebal</td>
+            <td>Meter</td>
+            <td>116</td>
+            <td>A1</td>
+            <td>07:00</td>
+            <td>16:00</td>
+            <td>LYK002</td>
+            <td>200</td>
+            <td>Person</td>
+            <td></td>
+            <td>Person</td>
+            <td>Time</td>
+            <td>On Duty</td>
+            <td>Text</td>
+        </tr>
+                <tr>
+            <td><button class="edit-button">Edit</button></td>
+            <td>Ultraman</td>
+            <td>13-07-2024</td>
+            <td>R004</td>
+            <td>Cincang 5" Tebal</td>
+            <td>Meter</td>
+            <td>116</td>
+            <td>A1</td>
+            <td>07:00</td>
+            <td>16:00</td>
+            <td>LYK003</td>
+            <td>200</td>
+            <td>Person</td>
+            <td></td>
+            <td>Person</td>
+            <td>Time</td>
+            <td>On Duty</td>
+            <td>Text</td>
+        </tr>
+                <tr>
+            <td><button class="edit-button">Edit</button></td>
+            <td>Astroboy</td>
+            <td>21-12-2024</td>
+            <td>R005</td>
+            <td>Cincang 5" Tebal</td>
+            <td>Meter</td>
+            <td>116</td>
+            <td>A1</td>
+            <td>07:00</td>
+            <td>16:00</td>
+            <td>LYK004</td>
+            <td>200</td>
+            <td>Person</td>
+            <td></td>
+            <td>Person</td>
+            <td>Time</td>
+            <td>On Duty</td>
+            <td>Text</td>
+        </tr>
+                <tr>
+            <td><button class="edit-button">Edit</button></td>
+            <td>Nobita</td>
+            <td>20-02-2024</td>
+            <td>R002</td>
+            <td>Cincang 5" Tebal</td>
+            <td>Meter</td>
+            <td>116</td>
+            <td>A1</td>
+            <td>07:00</td>
+            <td>16:00</td>
+            <td>LYK005</td>
+            <td>200</td>
+            <td>Person</td>
+            <td></td>
+            <td>Person</td>
+            <td>Time</td>
+            <td>On Duty</td>
+            <td>Text</td>
+        </tr>
+        <!-- Add more rows as needed -->
+    </tbody>
+</table>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script src="filter2.js"></script>
+
+</body>
+</html>

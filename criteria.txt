@@ -1,0 +1,53 @@
+Action
+button
+
+Submitted By
+person
+
+Submitted When
+date
+
+Site Code
+R002
+
+Activity
+Text
+
+UOM
+Pokok
+Meter
+
+Block
+Number
+
+Task
+A1
+
+Start
+Time
+
+End
+Time
+
+Mesin ID
+LYK01
+
+Fuel
+200
+
+Check By
+Person
+
+When Check
+
+Verified By
+Person
+
+When Verified
+Time
+
+Duty
+On Duty
+
+Reason
+Text
